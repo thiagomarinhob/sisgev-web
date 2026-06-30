@@ -1,0 +1,20 @@
+export type OccurrenceStatus =
+  | "OPEN"
+  | "IN_ANALYSIS"
+  | "SCHEDULED"
+  | "IN_PROGRESS"
+  | "RESOLVED"
+  | "CANCELLED"
+
+export type ProblemType =
+  | "POTHOLES"
+  | "MUD"
+  | "FLOODING"
+  | "EROSION"
+  | "BRIDGE_DAMAGE"
+  | "VEGETATION"
+  | "BLOCKAGE"
+  | "DUST"
+  | "DRAINAGE_PROBLEM"
+  | "RUTTING"
+  | "OTHER"

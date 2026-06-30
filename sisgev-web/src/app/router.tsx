@@ -2,6 +2,7 @@ import { createBrowserRouter, Navigate } from "react-router-dom"
 
 import { LoginPage } from "@/features/auth/pages/LoginPage"
 import { AdminLayout } from "@/features/admin/layouts/AdminLayout"
+import { DashboardPage } from "@/features/dashboard/pages/DashboardPage"
 import { RoleGuard } from "./guards"
 
 export const router = createBrowserRouter([
@@ -14,7 +15,7 @@ export const router = createBrowserRouter([
       {
         element: <AdminLayout />,
         children: [
-          { path: "/admin/dashboard", element: <div>Admin Dashboard</div> },
+          { path: "/admin/dashboard", element: <DashboardPage /> },
           { path: "/admin/municipalities", element: <div>Municípios</div> },
           { path: "/admin/users", element: <div>Usuários</div> },
           { path: "/admin/roads", element: <div>Estradas</div> },

@@ -6,6 +6,7 @@ import {
   ClipboardCheck,
   LayoutDashboard,
   LogOut,
+  Map,
   MapPin,
   Route,
   Users2,
@@ -29,6 +30,12 @@ const NAV_ITEMS: NavItem[] = [
     label: "Dashboard",
     to: "/admin/dashboard",
     icon: LayoutDashboard,
+    roles: ["SUPER_ADMIN", "ADMIN_OPERACIONAL"],
+  },
+  {
+    label: "Mapa",
+    to: "/admin/mapa",
+    icon: Map,
     roles: ["SUPER_ADMIN", "ADMIN_OPERACIONAL"],
   },
   {

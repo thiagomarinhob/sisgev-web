@@ -34,7 +34,7 @@ export function KmByConditionChart({ kmByCondition }: KmByConditionChartProps) {
           <XAxis dataKey="label" tick={{ fontSize: 11 }} />
           <YAxis tick={{ fontSize: 11 }} unit=" km" width={52} />
           <Tooltip
-            formatter={(value: number) => [`${value.toFixed(1)} km`, "Extensão"]}
+            formatter={(value) => [`${Number(value).toFixed(1)} km`, "Extensão"]}
             cursor={{ fill: "oklch(0 0 0 / 5%)" }}
           />
           <Bar dataKey="km" radius={[4, 4, 0, 0]}>
